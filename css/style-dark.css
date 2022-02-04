@@ -1,0 +1,614 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    transition: all .7s;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #181818;
+}
+a {
+    text-decoration: none;
+    color: #828282;
+    transition: all 0.5s;
+}
+a:hover {
+    color:#fff;
+}
+.container {
+    max-width: 960.61px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.none {
+    display: none;
+}
+@font-face {
+    -moz-font-feature-settings: Gilroy;
+    font-family:Gilroy;
+    src: url(font/Gilroy-Light.otf);
+    src: url(font/Gilroy-ExtraBold.otf);
+}
+/* font-family: Gilroy;
+font-weight: 800;
+
+font-family: Gilroy;
+font-weight: 300; */
+
+/* ****Подключение font шрифтов**** */
+/* ****************header**************** */
+.header-menu-top {
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    padding-bottom: 32px;
+    margin-top: 32px;
+    display: flex;
+    transition: all .1s;
+}
+.header-menu-top a {
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+}
+.header-menu-top a:first-child {
+    color: #fff;
+}
+.header-menu-top a:not(:first-child) {
+    margin-left: 112.5px;
+}
+/* .header-menu-top .icon {
+    display: none;
+} */
+.menu {
+    background-image: url(../images/menu-dark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    width: 33px;
+    height: 19px;
+}
+.menu-close {
+    background-image: url(../images/menu-close-dark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    width: 22.87px;
+    height: 22.24px;
+    margin: -4px 4px 0px 0px;
+}
+.button {
+    float: right;
+    width: max-content;
+    margin-top: 12px;
+    z-index: 1;
+}
+
+.personality-data {
+    color: #070707;
+    margin-top: 39.56px;
+    display: flex;
+    justify-content: space-between;
+}
+.age,
+.name {
+    width: 70%;
+    color: #fff;
+}
+.name {
+    font-family: Gilroy;
+    font-size: 47px;
+    font-weight: 800;
+    line-height: 58px;    
+}
+.age {
+    padding-top: 55.21px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;    
+}
+.theme-wrap {
+    display: flex;
+    align-items: center;
+}
+.circle-inner-light {
+
+    margin-right: 6.06px;
+    background-color: #B9B9B9;
+    border-radius: 50px;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.circle-inner-dark {
+    background-color: #000;
+    border-radius: 50px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.change-lang {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 0 0 18px 0;
+}
+.change-lang a {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px;
+}
+.stand-out {
+    color: #fff;
+}
+.personality-photo{
+    margin: 31px 0 102px 0;
+}
+.photo {
+    border-radius: 50% 20% / 10% 40%;
+    width: 100%;
+}
+.photoForPhone {
+    display: none;
+}
+/* ***************aboutMe******************* */
+.aboutMe {
+    background-color: #525252;
+}
+.aboutMe-information {
+    padding-top: 120.25px;
+    padding-bottom: 17.69px;
+}
+.aboutMe-description {
+    justify-content: center;
+}
+.aboutMe-title {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 42px;
+    text-align: center;
+}
+.aboutMe-description p {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 auto;
+}
+.aboutMe-text-1 {
+    max-width: 59%;
+    word-wrap: break-word;
+}
+.aboutMe-text-2 {
+    max-width: 50%;
+    padding-top: 41px;
+    word-wrap: break-word;
+}
+.aboutMe-text-3 {
+    max-width: 35%;
+    padding-top: 41px;
+    padding-bottom: 117px;
+    word-wrap: break-word;
+}
+/********************Skills************** */
+.Skills-title {
+    margin-top: 91px;
+    margin-bottom: 53.14px;
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 42px;
+    text-align: center;
+}
+.Skills-description {
+    color: #fff;
+    margin-bottom: 95.82px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
+}
+.Skills-box-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.Skills-inner {
+    text-align: center;
+    margin-bottom: 96.73px;
+}
+.Skills-inner p {
+    margin-top: 23.58px;
+    margin-bottom: 30px;
+    color: #E5E5E5;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+}
+.Skills-inner-stars {
+    display: inline-block;
+    font-size: 0;
+}
+.Skills-inner-stars span {
+    padding: 0;
+    font-size: 34px;
+    line-height: 20px;
+    color: #636363;
+}
+.Skills-inner-stars > span:before {
+    content: "★";
+}
+.Skills-inner-stars > span.active {
+    color: #fff;
+}
+/* *****************Portfolio*************/
+.Portfolio {
+    margin-bottom: 114.24px;
+    background-color: #525252;
+}
+.Portfolio-title {
+    color: #fff;
+    padding: 112.93px 0 48.07px 0;
+    font-family: Gilroy;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 42px;
+    text-align: center;
+}
+.Portfolio-img {
+    width: 100%;
+    transition: all .3s;
+}
+.Portfolio-img:hover {
+    transform: scale(.96);
+}
+.Portfolio-box {
+    padding-bottom: 166px; 
+    text-align: center;   
+}
+.Portfolio-box span {
+    color: #e5e5e5;
+}
+/* ******************footer******************** */
+footer {
+    text-align: center;
+}
+.footer-title {
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #fff;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 20.03px;
+}
+.footer-description {
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 275px;
+    margin: 0 auto 29.06px;
+}
+.footer-button-inner {
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+    max-width: 316px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: none;
+    background-color: #E9E9E9;
+
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    color: #2C2C2C;
+    line-height: 22px;
+    text-align: center;
+    padding: 10px 30px 9px 29px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+.footer-button-inner:hover {
+    box-shadow: none;
+    background-color: #fff;
+}
+.footer-link-wrap {
+    margin: 85.78px 0;
+    display: flex;
+    justify-content: center;
+}
+.link-1 {
+    background-image: url(../images/link-1-dark.svg);
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.link-1:hover {
+    background-image: url(../images/link-hover-1.svg);
+}
+.link-2 {
+    background-image: url(../images/link-2-dark.svg);
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.link-2:hover {
+    background-image: url(../images/link-hover-2.svg);
+}
+.link-3 {
+    background-image: url(../images/link-3-dark.svg);
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.link-3:hover {
+    background-image: url(../images/link-hover-3.svg);
+}
+.link-4 {
+    background-image: url(../images/link-4-dark.svg);
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.link-4:hover {
+    background-image: url(../images/link-hover-4.svg);
+}
+.footer-link-wrap a:not(:first-child) {
+    margin-left: 60px;
+}
+.conf-information {
+    color: #e5e5e5;
+    margin-bottom: 100px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+}
+/* *********Медиа запросы*************** */
+@media(max-width: 893px) {
+    #menu {
+        display: block;
+    }
+    .header-menu-top a {
+        opacity: 0;
+        display: block;
+        width: max-content;
+        font-family: Gilroy-Bold;
+        font-size: 34px;
+        line-height: 42px;
+        position: relative;
+        right: 300px;
+    }
+    
+    .header-menu-top a.icon {
+        display: inline-block;
+        color: #000;
+        font-size: 35px;
+        padding: 0;
+        text-align: right;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .header-menu-top {
+        border: none;
+        margin-top: 68px;
+        display: block;
+    }
+    .header-menu-top a:not(:first-child) {
+        margin: 68px 0 0 0;
+        padding: 0;
+    }
+    .header-menu-top-responsive {
+        display: block;
+        transition: all .1s;
+        margin-top: 68px;
+        background-color: #181818;
+        position: relative;
+    }
+    .header-menu-top-responsive a {
+        opacity: 1;
+        display: block;
+        right: 0;
+    }
+    .age {
+        padding-top: 65.21px;
+    }
+    .photo {
+        border-radius: 0;
+    }
+    .nav-personality {
+        margin-top: -560px;
+    }
+    .change-lang {
+        writing-mode: unset;
+        transform: unset;
+        margin: 91px -30px 0px 0;
+        white-space: nowrap;
+    }
+    .change-lang a {
+        font-size: 18px;
+    }
+    .button {
+        position: relative;
+    }
+    .theme-wrap {
+        margin: 80px 80px 0 0;
+    }
+    .aboutMe-information {
+        padding-top: 102.25px;
+        padding-bottom: 46.69px;
+    }
+    .aboutMe-text-1 {
+        max-width: 50%;
+    }
+    .aboutMe-text-2 {
+        max-width: 41%;
+    }
+    .aboutMe-text-3 {
+        max-width: 40%;
+        padding-top: 50px;
+        padding-bottom: 130px;
+    }
+    .Skills-box-wrap {
+        justify-content: space-around;
+    }
+    .footer-button-inner {
+        padding: 12px 97px;
+        white-space: nowrap;
+    }
+}
+@media(max-width: 620px) {
+    .personality-data {
+        display: block;
+    }
+    .age {
+        padding-top: 13px;
+        padding-bottom: 39px;
+    }
+    .change-lang {
+        writing-mode: unset; 
+        transform: none; 
+        margin: 0px 0 39px 0;
+    }
+    .personality-photo {
+        text-align: center;
+    }
+    .photo {
+        display: none;
+    }
+    .photoForPhone {
+        display: unset;
+    }
+    .personality-photo {
+        margin: 31px 0 83px 0;
+    }
+    .theme-wrap {
+        margin: -10px 0px 30px 0;
+    }
+    .aboutMe-information {
+        padding-top: 81px;
+        padding-bottom: 30px;
+    }
+    .aboutMe-text-1 {
+        max-width: 300px;
+    }
+    .aboutMe-text-2 {
+        max-width: 50%;
+        padding-top: 30px;
+    }
+    .aboutMe-text-3 {
+        max-width: 50%;
+        padding-top: 30px;
+        padding-bottom: 73px;
+    }
+    .Skills-title {
+        margin-top: 83px;
+        margin-bottom: 34px;
+        line-height: 41px;
+    }
+    .Skills-description {
+        margin-bottom: 80px;
+        line-height: 20px;
+    }
+    .Skills-box-wrap {
+        display: block;
+    }
+    .Skills-inner {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .Portfolio {
+        margin-bottom: 82px;
+    }
+    .Portfolio-title {
+        padding: 81px 0 66px 0;
+    }
+    .Portfolio-box {
+        padding-bottom: 125px
+    }
+    .footer-description {
+        margin: 0px auto 39px;
+    }
+    
+    .footer-link-wrap {
+        margin: 60px 0 60px 0;
+    }
+    .footer-link-wrap a:not(:first-child) {
+        margin-left: 45px;
+    }
+    .conf-information {
+        margin-bottom: 90px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+@media(max-width: 380px) {
+    .aboutMe-text-1 {
+        max-width: 316px;
+    }
+    .aboutMe-text-2 {
+        max-width: 100%;
+    }
+    .aboutMe-text-3 {
+        max-width: 71%;
+    }
+    .Skills-description {
+        margin-bottom: 130px;
+    }
+    .footer-link-wrap {
+        margin: 48px 0 90px 0;
+    }
+}
+@media(max-width: 320px) {
+    .name {
+        font-family: Gilroy;
+        font-size: 45px;
+    }
+    .nav-personality {
+        margin-top: -500px;
+    }
+    .header-menu-top a {
+        font-size: 31px;
+        line-height: 32px;
+    }   
+    .photoForPhone {
+        width: 100%;
+    }
+    .footer-button-inner {
+        padding: 12px 70px;
+    }
+    .footer-link-wrap {
+        margin: 33px 0 47px 0;
+    }
+    .footer-link-wrap a:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+@media(max-width: 200px) {
+    * {
+        display: none;
+    }
+}
+/* *********Медиа запросы*************** */
